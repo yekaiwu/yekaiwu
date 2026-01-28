@@ -61,35 +61,6 @@ Interactive weather application featuring **forecasting capabilities** and **int
 
 ---
 
-## 💼 Professional Experience
-
-### 🤖 Agent Development Intern
-**Wrtn Technologies** | Seoul | *May - August 2025*
-- Enhanced LLM response accuracy through retrieval optimization techniques
-- Created **Memory**, **Search**, and **Self-reflection** systems for B2B AI tools
-- Developed agentic systems for autonomous decision-making
-
-### 🌏 Cross Border Acceleration Intern
-**XNode** | Shanghai | *May - August 2024*
-- Researched international acceleration programs and market trends
-- Managed startup and VC databases, improving query efficiency and data insights
-- Facilitated cross-border collaboration initiatives
-
-### 📊 Research Intern
-**WorldQuant** | *January - July 2023*
-- Automated quantitative alpha signal analysis for financial markets
-- Built robust backtesting frameworks improving strategy accuracy
-- Conducted systematic research on market patterns and signals
-
----
-
-## 🎓 Education
-
-**Bachelor of Science in Computer Science**
-*Singapore Management University (SMU)* | 2023 - 2027
-
----
-
 ## 📫 Let's Connect!
 
 I'm always interested in collaborating on projects involving AI/ML, full-stack development, or innovative tech solutions. Feel free to reach out!
