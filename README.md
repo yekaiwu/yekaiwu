@@ -1,97 +1,128 @@
 <div align="center">
-  <a href="https://yekaiwu.github.io">
-    <img src="https://github.com/yekaiwu.png?size=192" width="112" height="112" alt="Wu Yekai" />
-  </a>
 
-  # Wu Yekai
+# Wu Yekai
 
-  <strong>AI data &amp; systems builder based in Singapore.</strong>
+**Software engineer building agentic products, decision systems, and data-rich tools.**
 
-  I build the parts that make AI useful in practice: data and evaluation pipelines, agent workflows with clear boundaries, and full-stack tools people can operate.
+[Portfolio](https://yekaiwu.github.io) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/yekaiwu/) &nbsp;·&nbsp; [Email](mailto:wuyekai.sg@gmail.com)
 
-  <a href="https://yekaiwu.github.io"><img src="https://img.shields.io/badge/portfolio-0f172a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/yekaiwu/"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:wuyekai.sg@gmail.com"><img src="https://img.shields.io/badge/email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://yekaiwu.github.io/uploads/resume.pdf"><img src="https://img.shields.io/badge/r%C3%A9sum%C3%A9-334155?style=for-the-badge&logo=readme&logoColor=white" alt="Résumé" /></a>
 </div>
 
-## In brief
+<br>
+
+## Selected projects
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Now</h3>
-      <p><b>AI Data Intern · ByteDance</b><br>Building model-centric data-curation and quality pipelines for LLM training with Python and SQL.</p>
-      <p><b>B.Sc. Computer Science · SMU</b><br>Expected 2027 · Global Impact Scholarship and Andy Chua Scholarship.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Previously</h3>
-      <p><b>Agent Development Intern · Wrtn Technologies</b><br>Worked on retrieval, memory, search, self-reflection, and multi-agent interaction systems for a B2B agent product.</p>
-      <p><b>What I keep returning to</b><br>Agent reliability, multimodal systems, quantitative decision-making, and developer tools that make complex systems easier to inspect.</p>
-    </td>
-  </tr>
+<tr>
+<td width="42%" valign="top">
+
+### Realtor OS
+
+A lead-engagement operating desk for property agents — inbound WhatsApp and voice leads, assistant-led qualification, bookings, inventory, cost visibility, and CRM sync in one runtime.
+
+- Workflow compiler renders a versioned prompt, workflow definition, and runtime variables into a system prompt and tool set; each conversation pins its own prompt/workflow version so a live thread never shifts mid-conversation.
+- Runs fully offline: falls back to a local JSON store and deterministic mock providers when no database or LLM key is set, keeping dev and CI unblocked.
+- Twilio WhatsApp and voice webhooks, Cal.com booking, and a CRM adapter boundary to Twenty — covered by Vitest units plus smoke, readiness, and route-level E2E suites.
+
+<code>Next.js</code> <code>Vercel AI SDK</code> <code>Twilio</code> <code>Postgres</code> <code>Twenty CRM</code>
+
+</td>
+<td width="58%" valign="top">
+
+<img src="assets/realtor-os-workflows.png" width="100%" alt="Realtor OS workflow library showing versioned seller qualification, buyer qualification, and listing enquiry workflows">
+<sub>Workflow configuration screen: versioned prompts, stages, and tools.</sub>
+
+</td>
+</tr>
 </table>
-
-<p>
-  <img src="https://img.shields.io/badge/LLM%20systems-7C3AED?style=flat-square" alt="LLM systems" />
-  <img src="https://img.shields.io/badge/data%20%26%20evaluation-0F766E?style=flat-square" alt="Data and evaluation" />
-  <img src="https://img.shields.io/badge/full--stack%20products-2563EB?style=flat-square" alt="Full-stack products" />
-  <img src="https://img.shields.io/badge/quant%20%26%20optimisation-B45309?style=flat-square" alt="Quant and optimisation" />
-</p>
-
-## Things I have built
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Manual2Assembly <sub>· SMU × University of Helsinki</sub></h3>
-      <p>Co-developed a hybrid DINOv3/VLM inspection pipeline. A ~14 ms visual-change gate triggers ~1.25 s VLM inference only when needed, reducing calls from 3,000 to about 840 without measurable accuracy loss. I also worked on 6-DoF ArUco/solvePnP geometric verification and CAD-render alignment for missing/misplaced-part detection.</p>
-      <p><code>DINOv3</code> <code>VLMs</code> <code>OpenCV</code> <code>3D geometry</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Realtor OS</h3>
-      <p>An operating desk for property lead engagement across WhatsApp and voice: assistant qualification, booking, tasks, inventory, costs, and CRM sync. The workflow compiler separates configuration from runtime; each conversation pins its prompt and workflow version so a live thread remains predictable.</p>
-      <p><code>Next.js</code> <code>Vercel AI SDK</code> <code>Twilio</code> <code>Postgres</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Jump Cup</h3>
-      <p>A calibration-first probability engine for football markets. It parses a question, routes it through suitable models, ensembles signals, then applies isotonic calibration, base-rate shrinkage, and probability controls. Its evaluation gate checks 198 settled markets across 20 captured matches rather than presenting winner picks as proof.</p>
-      <p><code>Python</code> <code>scikit-learn</code> <code>OpenRouter</code> <code>SQLite</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/yekaiwu/Chess_Coach">Chess Coach ↗</a></h3>
-      <p>A full-stack coach that turns Stockfish analysis into contextual commentary, tactics, and chat. The application combines a React/TypeScript client with FastAPI, engine analysis, provider-configurable LLM chains, Docker setup, and backend/frontend/integration CI.</p>
-      <p><code>React</code> <code>FastAPI</code> <code>Stockfish</code> <code>LangChain</code></p>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="assets/jump-cup-brier.png" width="100%" alt="Jump Cup evaluation chart comparing mean crowd Brier score across settled-market question families">
+<sub>Calibration gate output: crowd forecasting error by question family.</sub>
+
+#### Jump Cup
+
+A multi-model probability-forecasting engine for World Cup markets, built around Brier-score calibration rather than confident winner picks.
+
+- Question parser (LLM + heuristic, cross-checked) routes into 8 model families, ensembles their outputs, then applies isotonic calibration and base-rate shrinkage before clamping to [0.01, 0.99].
+- A calibration gate (`pytest -m calibration_gate`) fails the build unless engine Brier score beats crowd consensus across 198 settled markets from 20 captured matches; every prediction ships with a full parse → model → calibration trace.
+
+<code>Python</code> <code>scikit-learn</code> <code>OpenRouter</code> <code>SQLite</code>
+
+</td>
+<td width="50%" valign="top">
+
+<img src="assets/chess-coach.png" width="100%" alt="Chess Coach interface showing the game board and position evaluation panel">
+<sub>Evaluation tab: live win-probability and centipawn scoring.</sub>
+
+#### [Chess Coach ↗](https://github.com/yekaiwu/Chess_Coach)
+
+A full-stack chess coach that turns Stockfish evaluations into contextual commentary, tactics, and a coaching chatbot.
+
+- FastAPI backend coordinates Stockfish analysis with LangChain-based chat, exposing evaluation, commentary, tactics, and chat as separate routes consumed by a React/TypeScript client.
+- Dockerized local setup with separate backend, frontend, and integration CI workflows, plus a scheduled security scan.
+
+<code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Stockfish</code> <code>LangChain</code>
+
+</td>
+</tr>
 </table>
 
-## More engineering work
+| Project | What it demonstrates | Stack |
+|---|---|---|
+| **[MRT + Bus Router ↗](https://github.com/yekaiwu/mrt-bus)** | "Leave now" Singapore transit routing over a custom bounded multi-modal search — live LTA bus arrivals, GTFS rail topology, OneMap walking data, transfer penalties — with zero third-party runtime dependencies. Benchmarked against the Google Maps Routes API on 100 checkpointed cases (42 wins · 29 ties · 29 losses, avg +1.1 min). | `Python` (stdlib) |
+| **[NUS Tennis Booker ↗](https://github.com/yekaiwu/nus_tennis)** | Playwright automation that races a university booking portal the instant slots release: pre-warms and parks an authenticated session ahead of the window, polls the slot grid every 200ms, and runs a separate scheduled health check that alerts over Telegram if the site's DOM changes. | `Python` `Playwright` `APScheduler` `FastAPI` |
 
-| Build | What it demonstrates |
-| --- | --- |
-| **Money Money** | A personal portfolio research tool that keeps strategy signals, risk controls, and recommendations deterministic; an LLM explains structured facts instead of deciding trades. |
-| **MRT + Bus Router** | “Leave now” Singapore routing using live LTA arrivals, GTFS rail topology, OneMap walking, transfer penalties, and a checkpointed Google Maps comparison. |
-| **Scrooge Global Bank** | Cloud-native CRM project recognised with the UBS SMU-X IT Solution Award; React/TypeScript and Java/Spring Boot services deployed through Terraform, ECS Fargate, Lambda, and GitHub Actions. |
-| **Optimal Routing for DeFi Swapping** | Mathematical path optimisation for token swaps across liquidity pools, with market-data and execution API integration. |
-| **NUS Tennis Booker** | Time-sensitive Playwright automation with persistent sessions, a pre-warmed browser pool, health checks, and Telegram handoff. |
-| **<a href="https://github.com/yekaiwu/claude_when">Claude When ↗</a>** | A local TypeScript/Express scheduler for daily Claude Code CLI runs, with a small web interface for schedule state. |
+<sub>Also maintain a small local scheduler that triggers daily Claude Code CLI sessions via <code>node-cron</code> — not public.</sub>
 
-## Tools I reach for
+## Experience
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## A note on this profile
+**AI Data Intern · ByteDance**
+Model-centric data curation and quality pipelines for LLM training, built with Python and SQL.
 
-I keep the project descriptions here specific enough to be useful in an interview, and link source only when it is public. For fuller system notes, screenshots, and contact details, visit <a href="https://yekaiwu.github.io">yekaiwu.github.io</a>.
+</td>
+<td width="50%" valign="top">
+
+**Agent Development Intern · Wrtn Technologies**
+Retrieval, memory, search, self-reflection, and multi-agent interaction systems for a B2B agent product.
+
+</td>
+</tr>
+</table>
+
+## Education
+
+**B.Sc. Computer Science · Singapore Management University**
+Expected 2027 — Global Impact Scholarship and Andy Chua Scholarship.
+
+## Technical skills
+
+**Languages** &nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+**AI & LLM systems** &nbsp;
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square) ![Vercel AI SDK](https://img.shields.io/badge/Vercel%20AI%20SDK-000000?style=flat-square&logo=vercel&logoColor=white) ![OpenRouter](https://img.shields.io/badge/OpenRouter-6467F2?style=flat-square) ![LiteLLM](https://img.shields.io/badge/LiteLLM-2E7D32?style=flat-square)
+
+**Backend & frontend** &nbsp;
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+**Data & quantitative** &nbsp;
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
+**Developer tools** &nbsp;
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+
+<br>
+
+<div align="center">
+
+Case studies, architecture notes, and more at <a href="https://yekaiwu.github.io">yekaiwu.github.io</a>
+
+</div>
