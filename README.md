@@ -1,63 +1,97 @@
 <div align="center">
+  <a href="https://yekaiwu.github.io">
+    <img src="https://github.com/yekaiwu.png?size=192" width="112" height="112" alt="Wu Yekai" />
+  </a>
 
-# Wu Yekai
+  # Wu Yekai
 
-**Software engineer building agentic products, decision systems, and data-rich tools.**
+  <strong>AI data &amp; systems builder based in Singapore.</strong>
 
-[Portfolio](https://yekaiwu.github.io) · [GitHub](https://github.com/yekaiwu) · [LinkedIn](https://www.linkedin.com/in/yekaiwu/) · [Email](mailto:wuyekai.sg@gmail.com) · [Résumé](https://yekaiwu.github.io/uploads/resume.pdf)
+  I build the parts that make AI useful in practice: data and evaluation pipelines, agent workflows with clear boundaries, and full-stack tools people can operate.
 
+  <a href="https://yekaiwu.github.io"><img src="https://img.shields.io/badge/portfolio-0f172a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/yekaiwu/"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:wuyekai.sg@gmail.com"><img src="https://img.shields.io/badge/email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://yekaiwu.github.io/uploads/resume.pdf"><img src="https://img.shields.io/badge/r%C3%A9sum%C3%A9-334155?style=for-the-badge&logo=readme&logoColor=white" alt="Résumé" /></a>
 </div>
 
-I take systems from problem framing through architecture, implementation, testing, and usable interfaces. Recent work includes a workflow-configured real-estate engagement agent, a calibration-first forecasting engine, a multimodal transit router, and full-stack LLM applications.
+## In brief
 
-## Technical focus
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Now</h3>
+      <p><b>AI Data Intern · ByteDance</b><br>Building model-centric data-curation and quality pipelines for LLM training with Python and SQL.</p>
+      <p><b>B.Sc. Computer Science · SMU</b><br>Expected 2027 · Global Impact Scholarship and Andy Chua Scholarship.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Previously</h3>
+      <p><b>Agent Development Intern · Wrtn Technologies</b><br>Worked on retrieval, memory, search, self-reflection, and multi-agent interaction systems for a B2B agent product.</p>
+      <p><b>What I keep returning to</b><br>Agent reliability, multimodal systems, quantitative decision-making, and developer tools that make complex systems easier to inspect.</p>
+    </td>
+  </tr>
+</table>
 
-- **Agentic and LLM systems:** versioned workflows, structured tool use, prompt/runtime boundaries, deterministic fallbacks, and evaluation gates.
-- **Decision and quantitative systems:** calibration, probability forecasting, market-data pipelines, risk controls, backtesting, and explainable recommendations.
-- **Backend and data:** Python, TypeScript, FastAPI, Next.js, Node.js, PostgreSQL, SQLite, Supabase, API integrations, and typed contracts.
-- **Product engineering:** React, Vite, responsive interfaces, operational dashboards, browser automation, CI, and reproducible local setup.
+<p>
+  <img src="https://img.shields.io/badge/LLM%20systems-7C3AED?style=flat-square" alt="LLM systems" />
+  <img src="https://img.shields.io/badge/data%20%26%20evaluation-0F766E?style=flat-square" alt="Data and evaluation" />
+  <img src="https://img.shields.io/badge/full--stack%20products-2563EB?style=flat-square" alt="Full-stack products" />
+  <img src="https://img.shields.io/badge/quant%20%26%20optimisation-B45309?style=flat-square" alt="Quant and optimisation" />
+</p>
 
-## Featured work
+## Things I have built
 
-| Project | Problem and solution | Engineering evidence |
-| --- | --- | --- |
-| [Realtor OS](https://yekaiwu.github.io/#realtor-os) | Gives property agents one desk for inbound WhatsApp/voice leads, AI-led qualification, bookings, follow-ups, inventory, and CRM sync. | Config-to-runtime workflow compiler; per-thread version pinning; Vercel AI SDK/OpenRouter tool loop; Twilio, Cal.com, and Twenty adapter boundaries; local deterministic runtime; typecheck, Vitest, and E2E scripts. |
-| [Jump Cup](https://yekaiwu.github.io/#case-jump) | Turns natural-language football markets into calibrated probabilities rather than winner picks. | LLM + heuristic parser path, model routing, confidence-weighted ensemble, isotonic calibration, shrinkage, and an inspectable trace. Its calibration gate evaluates 198 settled markets across 20 matches and rejects non-finite forecasts or defined Brier-score regressions. |
-| [Money Money](https://yekaiwu.github.io/#case-money) | Personal, multi-market research and portfolio decision support for a SGD-based retail account. | Pluggable strategies, point-in-time price access, aggregation and risk gates, monitoring, backtest/effectiveness modules, FastAPI + Jinja/HTMX dashboard, and an optional LLM explainer constrained to structured facts. |
-| [Chess Coach](https://github.com/yekaiwu/Chess_Coach) | Makes engine analysis usable as coaching by pairing chess evaluation with context-aware explanation. | React/TypeScript + FastAPI system; Stockfish analysis orchestrated with provider-configurable LLM chains; structured outputs, conversation memory, Docker configuration, and backend/frontend/integration CI workflows. |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Manual2Assembly <sub>· SMU × University of Helsinki</sub></h3>
+      <p>Co-developed a hybrid DINOv3/VLM inspection pipeline. A ~14 ms visual-change gate triggers ~1.25 s VLM inference only when needed, reducing calls from 3,000 to about 840 without measurable accuracy loss. I also worked on 6-DoF ArUco/solvePnP geometric verification and CAD-render alignment for missing/misplaced-part detection.</p>
+      <p><code>DINOv3</code> <code>VLMs</code> <code>OpenCV</code> <code>3D geometry</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Realtor OS</h3>
+      <p>An operating desk for property lead engagement across WhatsApp and voice: assistant qualification, booking, tasks, inventory, costs, and CRM sync. The workflow compiler separates configuration from runtime; each conversation pins its prompt and workflow version so a live thread remains predictable.</p>
+      <p><code>Next.js</code> <code>Vercel AI SDK</code> <code>Twilio</code> <code>Postgres</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Jump Cup</h3>
+      <p>A calibration-first probability engine for football markets. It parses a question, routes it through suitable models, ensembles signals, then applies isotonic calibration, base-rate shrinkage, and probability controls. Its evaluation gate checks 198 settled markets across 20 captured matches rather than presenting winner picks as proof.</p>
+      <p><code>Python</code> <code>scikit-learn</code> <code>OpenRouter</code> <code>SQLite</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/yekaiwu/Chess_Coach">Chess Coach ↗</a></h3>
+      <p>A full-stack coach that turns Stockfish analysis into contextual commentary, tactics, and chat. The application combines a React/TypeScript client with FastAPI, engine analysis, provider-configurable LLM chains, Docker setup, and backend/frontend/integration CI.</p>
+      <p><code>React</code> <code>FastAPI</code> <code>Stockfish</code> <code>LangChain</code></p>
+    </td>
+  </tr>
+</table>
 
-## Other projects
+## More engineering work
 
-| Project | What it demonstrates |
+| Build | What it demonstrates |
 | --- | --- |
-| [MRT + Bus Router](https://yekaiwu.github.io/#case-mrt) | Singapore leave-now routing across live LTA bus arrivals, GTFS rail schedules, OneMap walking, and a checkpointed Google Maps benchmark. It explicitly documents data-quality limits. |
-| WC26 Edge | Market-first betting decision support: de-vigged sharp-book consensus, Dixon-Coles pricing, append-only odds snapshots, CLV tracking, and capped quarter-Kelly recommendations. Research tool only—not financial advice. |
-| [Job Application Assistant](https://yekaiwu.github.io/#job-app) | In-progress FastAPI/SQLite/React job-search workflow with public-ATS connectors, factual Qwen-assisted bullet tailoring, PDF rendering, and a KNOWN / INFERABLE / PERSONAL-UNKNOWN form-field router. |
-| Bojio / Food Buddy | Mobile-first social dining product with Supabase phone OTP, row-level security, restaurant parsing, host approval, and real-time meal chat. |
-| NUS Tennis Booker | Time-critical Playwright automation with persistent sessions, a pre-warmed browser pool, scheduled court search, health checks, payment handoff, and Telegram alerts. |
-| [Claude When](https://github.com/yekaiwu/claude_when) | A local-first TypeScript/Express scheduler that starts a Claude Code CLI session on a daily cron and surfaces schedule state through a small web UI. |
-| Liquidity | An architecture-first autonomous trading-agent track with a deterministic risk ladder, typed execution boundary, safety invariants, and specification-led tests. |
+| **Money Money** | A personal portfolio research tool that keeps strategy signals, risk controls, and recommendations deterministic; an LLM explains structured facts instead of deciding trades. |
+| **MRT + Bus Router** | “Leave now” Singapore routing using live LTA arrivals, GTFS rail topology, OneMap walking, transfer penalties, and a checkpointed Google Maps comparison. |
+| **Scrooge Global Bank** | Cloud-native CRM project recognised with the UBS SMU-X IT Solution Award; React/TypeScript and Java/Spring Boot services deployed through Terraform, ECS Fargate, Lambda, and GitHub Actions. |
+| **Optimal Routing for DeFi Swapping** | Mathematical path optimisation for token swaps across liquidity pools, with market-data and execution API integration. |
+| **NUS Tennis Booker** | Time-sensitive Playwright automation with persistent sessions, a pre-warmed browser pool, health checks, and Telegram handoff. |
+| **<a href="https://github.com/yekaiwu/claude_when">Claude When ↗</a>** | A local TypeScript/Express scheduler for daily Claude Code CLI runs, with a small web interface for schedule state. |
 
-## Engineering quality signals
+## Tools I reach for
 
-- Project repositories contain tests, typed interfaces, setup instructions, and documented system boundaries—not just demos.
-- `Jump Cup` treats calibration as a merge gate; `MRT + Bus Router` preserves benchmark checkpoints and caveats; `Realtor OS` has automated typecheck/test workflows and scenario scripts.
-- `Chess Coach` includes CI for backend, frontend, integration, and dependency-security checks. This portfolio is built and deployed through GitHub Pages workflows.
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
+</p>
 
-## GitHub activity
+## A note on this profile
 
-- [Public profile and contribution history](https://github.com/yekaiwu)
-- [Portfolio source](https://github.com/yekaiwu/yekaiwu.github.io) and [Chess Coach](https://github.com/yekaiwu/Chess_Coach) are linked only because their public URLs are verifiable. Other case studies remain documented here and on the portfolio while their source links are not publicly accessible.
-
-## Current interests
-
-Reliable agentic systems, especially workflow versioning, tool safety, observable decision paths, and evaluation. I’m equally interested in the quantitative side of decision-making: calibration, backtesting, risk constraints, and honest measurement.
-
-## Contact
-
-For software engineering, AI engineering, data, quantitative, or product-focused technical roles:
-
-- [Portfolio](https://yekaiwu.github.io)
-- [GitHub](https://github.com/yekaiwu)
-- [LinkedIn](https://www.linkedin.com/in/yekaiwu/)
-- [wuyekai.sg@gmail.com](mailto:wuyekai.sg@gmail.com)
+I keep the project descriptions here specific enough to be useful in an interview, and link source only when it is public. For fuller system notes, screenshots, and contact details, visit <a href="https://yekaiwu.github.io">yekaiwu.github.io</a>.
