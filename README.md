@@ -16,30 +16,24 @@
 <tr>
 <td width="50%" valign="top">
 
-<img src="assets/realtor-os-workflows.png" width="100%" alt="Realtor OS workflow library showing versioned seller qualification, buyer qualification, and listing enquiry workflows">
-<sub>Workflow configuration screen: versioned prompts, stages, and tools.</sub>
+<img src="assets/realtor-os-workflows.png" width="100%" alt="Diagram of Realtor OS's versioned workflow compiler: a prompt version, workflow stages, and runtime variables render into a compiled system prompt pinned to each conversation">
+<sub>System diagram: versioned prompt compiler.</sub>
 
 ### Realtor OS
 
-A lead-engagement operating desk for property agents — inbound WhatsApp and voice leads, assistant-led qualification, bookings, inventory, cost visibility, and CRM sync in one runtime.
-
-- Workflow compiler renders a versioned prompt, workflow definition, and runtime variables into a system prompt and tool set; each conversation pins its own version so a live thread never shifts mid-conversation.
-- Runs fully offline on a local JSON store and deterministic mock providers, covered by Vitest units plus smoke, readiness, and route-level E2E suites.
+A lead-engagement operating desk for property agents — inbound WhatsApp and voice leads, assistant-led qualification, bookings, inventory, and CRM sync in one runtime. A workflow compiler renders a versioned prompt, workflow definition, and runtime variables into a system prompt and tool set, pinning each live conversation to its own version so a thread never shifts mid-edit; the stack runs fully offline against a local JSON store and deterministic mock providers, covered by Vitest unit, smoke, readiness, and route-level E2E suites.
 
 <code>Next.js</code> <code>Vercel AI SDK</code> <code>Twilio</code> <code>Postgres</code> <code>Twenty CRM</code>
 
 </td>
 <td width="50%" valign="top">
 
-<img src="assets/jump-cup-brier.png" width="100%" alt="Jump Cup evaluation chart comparing mean crowd Brier score across settled-market question families">
-<sub>Calibration gate output: crowd forecasting error by question family.</sub>
+<img src="assets/jump-cup-brier.png" width="100%" alt="Diagram of Jump Cup's forecasting pipeline: a question parser fans out into 8 model families, ensembles their outputs, then applies isotonic calibration gated against crowd Brier score">
+<sub>System diagram: calibrated ensemble pipeline.</sub>
 
 ### Jump Cup
 
-A multi-model probability-forecasting engine for World Cup markets, built around Brier-score calibration rather than confident winner picks.
-
-- Question parser (LLM + heuristic, cross-checked) routes into 8 model families, ensembles their outputs, then applies isotonic calibration and base-rate shrinkage.
-- A calibration gate fails the build unless engine Brier score beats crowd consensus across 198 settled markets from 20 captured matches.
+A multi-model probability-forecasting engine for World Cup markets, built around Brier-score calibration rather than confident winner picks. A question parser (LLM plus heuristic, cross-checked) routes into 8 model families, ensembles their outputs, then applies isotonic calibration and base-rate shrinkage; a calibration gate fails the build unless the engine's Brier score beats crowd consensus across 198 settled markets from 20 captured matches.
 
 <code>Python</code> <code>scikit-learn</code> <code>OpenRouter</code> <code>SQLite</code>
 
@@ -48,53 +42,50 @@ A multi-model probability-forecasting engine for World Cup markets, built around
 <tr>
 <td width="50%" valign="top">
 
-<img src="assets/chess-coach.png" width="100%" alt="Chess Coach interface showing the game board and position evaluation panel">
-<sub>Evaluation tab: live win-probability and centipawn scoring.</sub>
+<img src="assets/chess-coach.png" width="100%" alt="Diagram of Chess Coach's backend pipeline: Stockfish position analysis feeds win-probability and centipawn scoring into a LangChain chat layer routed to commentary, tactics, and chat endpoints">
+<sub>System diagram: engine-grounded coaching pipeline.</sub>
 
 ### [Chess Coach ↗](https://github.com/yekaiwu/Chess_Coach)
 
-A full-stack chess coach that turns Stockfish evaluations into contextual commentary, tactics, and a coaching chatbot.
-
-- FastAPI backend coordinates Stockfish analysis with LangChain-based chat, exposing evaluation, commentary, tactics, and chat as separate routes consumed by a React/TypeScript client.
-- Dockerized local setup with separate backend, frontend, and integration CI workflows, plus a scheduled security scan.
+A full-stack chess coach that turns Stockfish evaluations into contextual commentary, tactics, and a coaching chatbot. A FastAPI backend coordinates Stockfish analysis with LangChain-based chat, exposing evaluation, commentary, tactics, and chat as separate routes consumed by a React/TypeScript client, delivered through a Dockerized local setup with separate backend, frontend, and integration CI workflows plus a scheduled security scan.
 
 <code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Stockfish</code> <code>LangChain</code>
 
 </td>
 <td width="50%" valign="top">
 
-<img src="assets/mrt-bus-router.png" width="100%" alt="MRT and Bus Router diagram showing a multi-modal route from origin to destination with bus, MRT, and walking legs, plus a 42-win/29-tie/29-loss benchmark against Google Maps">
-<sub>Route search and benchmark vs. the Google Maps Routes API.</sub>
+<img src="assets/job-app-pipeline.png" width="100%" alt="Diagram of Job App's pipeline: discover, filter, tailor, and fill stages, with a three-way KNOWN, INFERABLE, and PERSONAL-UNKNOWN field-routing split before a DRY_RUN-gated submit">
+<sub>System diagram: field-routed application pipeline.</sub>
+
+### Job App
+
+An autonomous job-search pipeline that discovers roles from public ATS boards, filters them for relevance and eligibility, tailors resume bullet points per role via an LLM, and fills applications through a Playwright browser session. Every form field routes to KNOWN (candidate database), INFERABLE (LLM-written), or PERSONAL-UNKNOWN — surfaced once and reused forever — so it never guesses a personal fact, with a `DRY_RUN` flag and a human-confirmed submit step keeping it safe to test.
+
+<code>FastAPI</code> <code>SQLModel</code> <code>Playwright</code> <code>React</code>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="assets/mrt-bus-router.png" width="100%" alt="Diagram of the MRT and Bus Router's multi-modal route search from origin to destination with bus, MRT, and walking legs, plus a 42-win/29-tie/29-loss benchmark against Google Maps">
+<sub>System diagram: route search and benchmark.</sub>
 
 ### [MRT + Bus Router ↗](https://github.com/yekaiwu/mrt-bus)
 
-"Leave now" Singapore transit routing over a custom bounded multi-modal search — live LTA bus arrivals, GTFS rail topology, and OneMap walking data — with zero third-party runtime dependencies.
-
-- Priority-queue label search with transfer penalties and same-mode vs. cross-mode walking caps, bounded to 1,500 search labels to keep live LTA quota usage predictable.
-- Benchmarked against the Google Maps Routes API on 100 checkpointed cases: 42 wins · 29 ties · 29 losses, avg +1.1 min.
+"Leave now" Singapore transit routing over a custom bounded multi-modal search — live LTA bus arrivals, GTFS rail topology, and OneMap walking data — with zero third-party runtime dependencies. A priority-queue label search applies transfer penalties and same-mode vs. cross-mode walking caps, bounded to 1,500 search labels to keep live LTA quota usage predictable, and benchmarks against the Google Maps Routes API on 100 checkpointed cases: 42 wins, 29 ties, 29 losses, average +1.1 minutes.
 
 <code>Python (stdlib)</code>
 
 </td>
-</tr>
-</table>
+<td width="50%" valign="top">
 
-<table>
-<tr>
-<td width="42%" valign="top">
-
-<img src="assets/nus-tennis-booker.png" width="100%" alt="NUS Tennis Booker timeline diagram showing pre-warm, window open, slot polling, and Telegram handoff steps">
-<sub>Race timeline: pre-warm through Telegram handoff.</sub>
-
-</td>
-<td width="58%" valign="top">
+<img src="assets/nus-tennis-booker.png" width="100%" alt="Diagram of NUS Tennis Booker's race timeline: pre-warm, window open, slot polling every 200ms, slot claimed, and Telegram handoff">
+<sub>System diagram: slot-release race timeline.</sub>
 
 ### [NUS Tennis Booker ↗](https://github.com/yekaiwu/nus_tennis)
 
-Playwright automation that races a university tennis-court booking portal the instant slots release, then hands the payment step to a human over Telegram.
-
-- Pre-warms and parks an authenticated session ahead of the release window, then polls the slot grid every 200ms once it opens — saving the launch and navigation time that would otherwise cost the race.
-- A separate scheduled health-check job re-authenticates and asserts the slot grid's DOM hasn't changed, alerting over Telegram if the site breaks.
+Playwright automation that races a university tennis-court booking portal the instant slots release, then hands the payment step to a human over Telegram. It pre-warms and parks an authenticated session ahead of the release window, polls the slot grid every 200ms once it opens, and runs a separate scheduled health-check job that re-authenticates and asserts the slot grid's DOM hasn't changed, alerting over Telegram if the site breaks.
 
 <code>Python</code> <code>Playwright</code> <code>APScheduler</code> <code>FastAPI</code>
 
