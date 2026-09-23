@@ -2,7 +2,7 @@
 
 # Wu Yekai
 
-**Software engineer building agentic products, decision systems, and data-rich tools.**
+**Building dependable AI systems across LLM research, evaluation, and agent products designed for real-world use.**
 
 [Portfolio](https://yekaiwu.github.io) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/yekaiwu/) &nbsp;·&nbsp; [Email](mailto:wuyekai.sg@gmail.com)
 
