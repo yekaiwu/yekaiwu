@@ -16,6 +16,30 @@
 <tr>
 <td width="50%" valign="top">
 
+<img src="assets/fraud-desk.png" width="100%" alt="Fraud Desk icon card: a document glyph representing the document-fraud review desk">
+
+### [Fraud Desk ↗](https://github.com/yekaiwu/fraud-desk)
+
+A review desk for KYC, AML, and loan documents. Cases are ranked, each flag points at the figure on the page, and the score shows which checks did not run.
+
+<code>Python</code> <code>FastAPI</code> <code>Next.js</code> <code>SQLite</code>
+
+</td>
+<td width="50%" valign="top">
+
+<img src="assets/gpu-scheduler.png" width="100%" alt="gpu-scheduler icon card: stacked slots representing admission control for Apple silicon memory">
+
+### [gpu-scheduler ↗](https://github.com/yekaiwu/gpu-scheduler)
+
+A local admission controller for Apple silicon unified memory. A job starts only when its reservation and the live footprint both fit, and it is stopped only in the way it said it can be stopped.
+
+<code>Python (stdlib)</code> <code>SQLite</code>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 <img src="assets/realtor-os-workflows.png" width="100%" alt="Realtor OS icon card: a house glyph representing the lead-engagement platform for property agents">
 
 ### Realtor OS
