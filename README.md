@@ -6,6 +6,8 @@
 
 [Portfolio](https://yekaiwu.github.io) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/yekaiwu/) &nbsp;·&nbsp; [Email](mailto:wuyekai.sg@gmail.com)
 
+![GitHub Developer Program](https://img.shields.io/badge/GitHub-Developer%20Program%20Member-181717?style=flat-square&logo=github&logoColor=white)
+
 </div>
 
 <br>
@@ -127,6 +129,14 @@ Playwright automation that races a university tennis-court booking portal the in
 
 **Developer tools** &nbsp;
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+
+## Contributions
+
+<div align="center">
+
+![GitHub contribution totals and streak](https://github-readme-streak-stats.herokuapp.com/?user=yekaiwu&hide_border=true)
+
+</div>
 
 <br>
 
